@@ -5,6 +5,8 @@ import { baseUrl, fetchApi } from "../utils/fetchApi";
 import PropertyList from './../components/PropertyList';
 import TeamList from './../components/TeamList';
 import BlogList from './../components/BlogList';
+import { teamData } from './../utils/teamData';
+import { blogDataHome } from './../utils/blogData';
 
 export default function Home({ propertyForSale, propertyForRent,team,blog }) {
 
@@ -81,8 +83,8 @@ export default function Home({ propertyForSale, propertyForRent,team,blog }) {
 export async function getStaticProps() {
   const propertyForSale = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6`);
   const propertyForRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`);
-  const team = await fetchApi(`http://localhost:3000/api/team`);
-  const blog = await fetchApi(`http://localhost:3000/api/blog?home=home`);
+  const team = teamData;
+  const blog = blogDataHome;
   
   return {
     props: {

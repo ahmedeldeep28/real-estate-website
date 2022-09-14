@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { fetchApi } from "../../utils/fetchApi";
 import { Container, Row,Col } from 'react-bootstrap';
+import { blogData } from './../../utils/blogData';
 
 function BlogDetalis({data}) {
 
@@ -32,20 +33,22 @@ function BlogDetalis({data}) {
 export default BlogDetalis;
 
 export async function getStaticPaths() {
-    const blog = await fetchApi(`http://localhost:3000/api/blog`);
+    const blog = blogData;
     const paths = blog.map(el => {
         return {
             params: { id: el.id.toString() }
         }
     })
+    console.log(paths);
     return {
         paths,
-        fallback:false
+        fallback: false
     }
 }
 
 export async function getStaticProps({params}) {
-    const [data] = await fetchApi(`http://localhost:3000/api/blog?id=${params.id}`);
+    console.log(params.id);
+    const data = blogData[params.id];
     return {
       props: {
         data,

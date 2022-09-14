@@ -3,7 +3,7 @@ import { Col, Container, Row, Accordion } from 'react-bootstrap';
 import BannerPage from './../components/BannerPage';
 import Image from 'next/image';
 import TeamList from './../components/TeamList';
-import { fetchApi } from "../utils/fetchApi";
+import { teamData } from './../utils/teamData';
 
 function About({ team }) {
   return (
@@ -89,7 +89,7 @@ export default About
 
 
 export async function getStaticProps() {
-  const team = await fetchApi(`http://localhost:3000/api/team`);
+  const team = teamData;
   return {
     props: {
       team,

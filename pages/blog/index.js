@@ -2,7 +2,7 @@ import React from 'react'
 import BannerPage from '../../components/BannerPage';
 import { Container } from "react-bootstrap";
 import BlogList from "../../components/BlogList";
-import { fetchApi } from "../../utils/fetchApi";
+import { blogData } from './../../utils/blogData';
 
 function Blog({ blog }) {
   return (
@@ -17,7 +17,7 @@ function Blog({ blog }) {
 
 
 export async function getStaticProps() {
-  const blog = await fetchApi(`http://localhost:3000/api/blog`);
+  const blog = blogData;
   return {
     props: {
       blog,
