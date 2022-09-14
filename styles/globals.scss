@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import "./scss/custom.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+.btn-primary {
+  color: $white !important;
+}
+.accordion  .dropdown-toggle::after {
+  content:unset !important
+}
+.accordion  .dropdown-menu {
+  max-height: 350px;
+  overflow: auto;
+}
+
+.dropdown  input {
+  height: 58px;
+}
+.dropdown  input:focus + .dropdown-menu {
+  display: block !important;
+}
+
+.carousel-indicators .active {
+  background: $primary !important;
+} 
+.carousel-indicators button {
+  background: $primary !important;
+  border-radius: 50%;
+  width: 25px !important;
+  height: 8px  !important;
+}
+a {
+  text-decoration: none;
+}
+
+.box-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ul_unstyle {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.rounded-4 {
+  border-radius: 9px;
+}
+
+.rounded-5 {
+  border-radius: 12px;
+}
+.accordion-item .accordion-button {
+  border: none !important;
+  box-shadow: none !important;
+  background: $white !important;
+  font-size: 18px;
+}
+
+/* star style layout  */
+.navbar {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.navbar .nav-link {
+  font-size: 17px;
+  font-weight: 400;
+  color: $white;
+  padding: 8px 12px;
+  text-transform: capitalize;
+  color: #000;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: $primary !important;
+}
+
+footer ul li a {
+  color: $white;
+  text-decoration: none;
+  transition: all .3s;
+}
+footer ul li:hover a {
+  color: $primary;
+}
+// start style cards
+.PropertyCard {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.PropertyCard .card-title {
+  min-height: 68px;
+}
+.PropertyCard .card-head { 
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+.PropertyCard .card-head div {
+  top: 10px;
+  left: 10px;
+}
+.PropertyCard .card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s;
+}
+.PropertyCard:hover .card-head img {
+  transform: scale(1.2);
+}
+.PropertyCard a {
+  text-decoration: none;
+  color: #001d38;
+  font-size: 21px;
+}
+
+.PropertyCard a:hover {
+  color: $primary;
+}
+
+.cardTeam_head {
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.cardTeam_head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.cardTeam_head .cardTeam_socail {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 29, 56, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 13px 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  transform: translateY(100%) scale(1.2);
+  opacity: 0;
+  visibility: hidden;
+}
+.cardTeam:hover .cardTeam_socail {
+  transform: translateY(0%);
+  opacity: 1;
+  visibility: visible;
+}
+.cardTeam_socail ul li {
+  color: $light;
+}
+.cardTeam_socail ul li:hover {
+  color: $primary;
+}
+
+.blogCard {
+  border-radius: 0px !important;
+  cursor: pointer;
+}
+.bradcam_area {
+  position: relative;
+  background: url(".././public/binner.webp") no-repeat center;
+  background-size: cover;
+  z-index: 0;
+  height: 90vh;
+}
+.bradcam_area::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #001d38;
+  opacity: 0.8;
+  z-index: -1;
+  content: "";
+}
+
+// start style banner
+.banner {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #001d38
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #001d38
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
