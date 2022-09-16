@@ -29,7 +29,7 @@ export default function Home({ propertyForSale, propertyForRent,team,blog }) {
 
       <section className='py-5 bg-light'>
         <Container>
-          <div className="box-between">
+          <div className="box-between flex-wrap">
             <div>
               <h2 className="displa h1 fw-bold text-capitalize">real estate for sale</h2>
               <p className="lead">
@@ -47,7 +47,7 @@ export default function Home({ propertyForSale, propertyForRent,team,blog }) {
 
       <section className='py-5 bg-light'>
         <Container>
-          <div className="box-between">
+          <div className="box-between flex-wrap">
             <div>
               <h2 className="displa h1 fw-bold text-capitalize">real estate for rent</h2>
               <p className="lead">
