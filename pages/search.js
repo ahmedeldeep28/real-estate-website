@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { Container, Button } from 'react-bootstrap';
 import SearchFilters from '../components/SearchFilters';
@@ -24,6 +25,9 @@ function Search({ properties }) {
 
   return (
     <>
+    <Head>
+      <title>search Property-Smart</title>
+    </Head>
       <Container>
         <div className="head py-4">
           <h2 className="fs-1 text-capitalize">

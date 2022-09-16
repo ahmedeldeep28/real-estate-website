@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 import PropertyList from './../components/PropertyList';
@@ -12,7 +13,9 @@ export default function Home({ propertyForSale, propertyForRent,team,blog }) {
 
   return (
     <>
-
+    <Head>
+      <title>Property-Smart</title>
+    </Head>
       <div className="bradcam_area d-flex align-items-center">
         <Container>
           <Row className="box-center">

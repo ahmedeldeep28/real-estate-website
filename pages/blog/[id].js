@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { Head } from 'next/head';
 
 import { fetchApi } from "../../utils/fetchApi";
 import { Container, Row,Col } from 'react-bootstrap';
@@ -8,6 +9,10 @@ import { blogData } from './../../utils/blogData';
 function BlogDetalis({data}) {
 
     return (
+        <>
+        <Head>
+            <title>{data.title}</title>
+        </Head>
         <Container className="py-4">
             <Row className="box-center">
                 <Col md={9}>
@@ -27,6 +32,8 @@ function BlogDetalis({data}) {
                 </Col>
             </Row>
         </Container>
+        </>
+
     )
 }
 

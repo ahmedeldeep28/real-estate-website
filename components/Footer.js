@@ -10,7 +10,7 @@ function Footer() {
             <Container>
                 <Row className="g-3">
                     <Col sm={6} md={4}>
-                        <h3 className="mb-4 text-white text-capitalize">Besnik</h3>
+                        <h3 className="mb-4 text-white text-capitalize">Property-Smart</h3>
                         <p className="text-light">While there are countless Trips out there in charity shops and car boot sales, you can also buy refurbished examples, with today replacement </p>
                     </Col>
                     <Col sm={6} md={4}>

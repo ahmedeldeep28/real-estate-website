@@ -4,10 +4,14 @@ import BannerPage from './../components/BannerPage';
 import Image from 'next/image';
 import TeamList from './../components/TeamList';
 import { teamData } from './../utils/teamData';
+import Head from 'next/head';
 
 function About({ team }) {
   return (
     <>
+    <Head>
+      <title>about</title>
+    </Head>
       <BannerPage title="about us" desc="Explore from Apartments, builder floors, villas, and more" />
       <Container>
         <Row className="mt-5 g-4">

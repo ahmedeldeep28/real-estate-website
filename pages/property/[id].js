@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head';
 import Link from 'next/link';
 import { baseUrl, fetchApi } from "../../utils/fetchApi";
 import { Carousel, Col, Button, Card, Form, Container, Row } from 'react-bootstrap';
@@ -27,6 +28,10 @@ function Property({ propertyData }) {
     })
     return (
         <>
+        <Head>
+            <meta name="description" content={description} />
+            <title>{title}</title>
+        </Head>
             <section className="py-3">
                 <Container>
                     <Carousel>
