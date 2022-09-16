@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Head } from 'next/head';
-
-import { fetchApi } from "../../utils/fetchApi";
+import  Head  from 'next/head';
 import { Container, Row,Col } from 'react-bootstrap';
 import { blogData } from './../../utils/blogData';
 
@@ -39,22 +37,21 @@ function BlogDetalis({data}) {
 
 export default BlogDetalis;
 
-export async function getStaticPaths() {
-    const blog = blogData;
-    const paths = blog.map(el => {
+export  function getStaticPaths() {
+
+    const paths = blogData.map(el => {
         return {
             params: { id: el.id.toString() }
         }
     })
-    console.log(paths);
     return {
         paths,
         fallback: false
     }
 }
 
-export async function getStaticProps({params}) {
-    console.log(params.id);
+export  function getStaticProps({params}) {
+
     const data = blogData[params.id];
     return {
       props: {
