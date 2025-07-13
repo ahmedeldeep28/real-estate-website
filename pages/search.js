@@ -18,7 +18,6 @@ function Search({ properties }) {
       query.page = +query.page - 1
     } else {
       query.page = +query.page + 1
-
     }
     router.push({ pathname: path, query: query });
   }

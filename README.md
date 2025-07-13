@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏡 Real Estate App
 
-## Getting Started
+A modern and responsive **Real Estate Web Application** built with **Next.js** and **Bootstrap**, enabling users to **search**, **filter**, and **view** properties for **rent and sale** with detailed information.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 📸 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔗 [View Live Site](https://your-demo-link.com) *(Replace with your deployment link)*
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🚀 Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- 🔍 **Search properties** by location, purpose (rent/sale), and price range
+- 🏢 **Property detail page** with images, price, area, and amenities
+- 📊 **Numbers formatting** using `millify` (e.g., 1000000 → 1M)
+- ⏳ **Page loading indicator** using `nprogress`
+- 💡 **Responsive UI** built with Bootstrap 5
+- ⚡ Fast client-side routing using Next.js
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Technology         | Description                             |
+|--------------------|-----------------------------------------|
+| **Next.js**        | React framework for SSR & routing       |
+| **React 18**       | UI library                              |
+| **Bootstrap 5**    | Styling and layout                      |
+| **React Bootstrap**| React components for Bootstrap          |
+| **Axios**          | For API requests                        |
+| **Sass**           | Custom styling                          |
+| **NProgress**      | Page load progress bar                  |
+| **Millify**        | Converts large numbers to readable form |
+| **React Icons**    | Icon library                            |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
